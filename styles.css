@@ -1,0 +1,690 @@
+html{
+    font-size: 62.5%
+}
+
+body{
+    margin: 0;
+    font-family: 'Playfair Display';
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin:4em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:4.0em;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: 'Poppins';
+    position: relative;
+    text-decoration-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+nav a.active:before{
+position: absolute;
+content: '';
+width: 35%;
+height: 1px;
+border-bottom: 2px solid black;
+bottom: -6px;
+}
+
+nav a:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 1px;
+    border-bottom: 2px solid rgb(88, 86, 86);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+main{
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+}
+
+.left-col{
+width: 45%;
+
+}
+
+.right-col{
+    flex-grow: 1;
+}
+
+h1{
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    margin: 0;
+}
+
+.subhead{
+    font-size: 1.8rem;
+    font-weight: normal;
+    
+}
+
+.cta-btns{
+    margin: 5em 0;
+}
+
+.cta-btns, .secondary-cta{
+display:flex;
+gap: 2em;
+}
+
+.primary-cta{
+    background-color: #E9C49B;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.secondary-cta{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+    align-items: center;
+    
+}
+
+.secondary-cta svg{
+    width: 20px;
+    transition: transform .3s;
+}
+
+.news{
+    display: flex;
+    gap:3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: 0.8em;
+    position: relative;
+}
+
+.news:before{
+    position: absolute;
+    content: '';
+    background: url('./images/confetti.svg');
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+
+}
+
+p.employees{
+    font-size: 3.3rem;
+    font-family: 'Poppins';
+    margin: 0;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+p.details{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.right-col{
+    width: 100vh;
+    height: 100%;
+    position: relative;
+    display: grid;
+    
+    gap: 2.3em;
+    /* grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "left right"
+    "left bottom"
+    ; */
+}
+
+.card{
+    /* position: relative;
+    top:-4em;
+    left: 1em;
+    background: gray;
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+    transition: background-size 800ms;
+    width: 60vh;
+    height: 35rem; */
+}
+
+.card1{
+    /* grid-area: center;
+    background-image: url('./images/985383626.jpg');
+  background-size: 40rem 40rem;
+  background-repeat: no-repeat; */
+}
+
+.image{
+    position: relative;
+    border-radius: 8em;
+    margin-left: 19em;
+    margin-bottom: 1em;
+}
+
+.card{
+    border-radius: .8em;
+    padding: 1.1em;
+    background-size: 150%;
+    transition: background-size 800ms;
+    transition-timing-function: ease-out;
+    
+}
+
+.card:hover{
+    /* transform: translateY(-10px) */
+    
+}
+
+.card-title{
+font-weight: bold;
+font-size:1.8em;
+font-family: "Poppins";
+}
+
+p a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    font-style: "Poppins";
+}
+
+p a:hover{
+    color: orange;
+}
+
+.card-text{
+
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    margin: 0;
+    padding-top: 1em;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    .main{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    .projects{
+      
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    .picture, .right-col {
+      margin-left: -16vh;
+      padding-top: -120%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    .picture, .right-col {
+      margin-left: -30%;
+      
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    .about {
+      margin-left: 10%;
+      
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    .cta-btns {
+      margin-left: -5em;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    #firstSection {
+      text-align: center;
+    }
+  }
+  /* @media only screen and (max-width: 800px) { */
+    /* For mobile phones: */
+     /* .left-col {
+      margin-right: -50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+     padding: 50%;
+     height: 100%;
+    }
+  } */
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .socials {
+      /* position: relative;
+      top: -20%; */
+    }
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .left-col {
+      position: relative;
+      margin-left: 22vh;
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+     .left-col {
+      position: relative;
+      margin-left: 17vh;
+      width: 60vh;
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .designer {
+      font-weight: bolder;
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .subhead {
+      position: relative;
+      width: 50vw;
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     nav ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      font-size: .3em;
+      gap: 8em;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+     nav ul {
+      position: relative;
+      display: flex;
+      
+      justify-content: center;
+      
+      margin-left: 8em;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+      .para {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      left:auto;
+      align-items: center;
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+      .about {
+      position: relative;
+      
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .myName {
+      position: relative;
+      margin-left: 2em;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+     .myName {
+      position: relative;
+      margin-left: 2em;
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .socials {
+        
+      position: relative;
+      
+      top: 75em;
+
+      
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .contact {
+      
+      position: relative;
+      top: 27em;
+      
+      
+      
+    }
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .row,  .card {
+      padding-top: 5em;
+      display: block;
+      width: 50vw;
+      
+    }
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .col {
+      padding-top: 10em;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+     .projects {
+      padding-top: 10em;
+      
+      
+    }
+  }
+
+  /* @media only screen and (max-width: 1676px) { */
+    /* For mobile phones: */
+     /* .about, .reveal-type {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10%;
+      
+    }
+  }
+
+  @media only screen and (max-width: 440px) { */
+    /* For mobile phones: */
+      /* .reveal-type {
+      
+      margin-right: 40%;
+      
+    }
+  } */
+
+
+
+.picture{
+    border-radius: 10em;
+    width:50vh;
+    height: auto;
+}
+.socials{
+    display: flex;
+    
+    align-items: start;
+    padding-top: 11em;
+    gap: 3em;
+    font-size: 1.8em;
+    font-family: "Poppins";
+    color: black;  
+    
+}
+
+.link{
+ 
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(104, 48, 48);
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.card2{
+    
+    background-image: url('./images/clothing2.jpg');
+}
+
+.card3{
+    background-image: url('./images/clothing3.jpg');
+}
+
+.card-details{
+    background: white;
+    border-radius: .6em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 800ms;
+}
+
+.card-details a{
+    color: black;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-details p{
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    margin: 0;
+
+}
+
+p.price{
+    font-size: 1.8rem;
+}
+
+nav a:hover:before{
+width: 35%;
+}
+
+.primary-cta:hover{
+    background: #EBB577;
+}
+
+.secondary-cta:hover svg{
+    transform: translateX(10px);
+
+}
+
+section{
+height: 100vh;
+padding: 0 clamp(4rem, 12vw, 20rem);
+display: flex;
+justify-content: center;
+/* align-items: center; */
+/* place-content: center; */
+
+}
+
+.para{
+font-size: clamp(2rem, 3vw, 1.8rem);
+}
+
+&:nth-of-type(3){
+    background: #E9C49B;
+}
+
+.about{
+    
+    display: flex;
+    justify-content: center;
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    margin: 0;
+    padding-top: 2em;
+}
+
+
+
+.card:hover .card-details{
+transform: translateY(-20px)
+}
+
+
+.overlay{
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal{
+    from{
+        transform: scaleY(1)
+    }
+
+    to{
+        transform: scaleY(0)
+    }
+}
+
+main{
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4)
+}
+
+@keyframes growIn{
+    to{
+        transform: scale(1)
+    }
+}
